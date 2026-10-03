@@ -1,0 +1,364 @@
+{
+  "input_file": "crop_production.csv",
+  "cleaning": {
+    "rows_raw": 246091,
+    "missing_per_column": {
+      "State_Name": 0,
+      "District_Name": 0,
+      "Crop_Year": 0,
+      "Season": 0,
+      "Crop": 0,
+      "Area": 0,
+      "Production": 3730
+    },
+    "duplicates": 0,
+    "rows_after_dropna": 242361,
+    "nonpositive_area": 0,
+    "coconut_rows_excluded": 1958,
+    "rows_final": 240403
+  },
+  "overview": {
+    "rows": 240403,
+    "states": 33,
+    "districts": 646,
+    "crops": 123,
+    "seasons": [
+      "Autumn",
+      "Kharif",
+      "Rabi",
+      "Summer",
+      "Whole Year",
+      "Winter"
+    ],
+    "year_min": 1997,
+    "year_max": 2015
+  },
+  "describe": [
+    {
+      "variable": "Area",
+      "count": 240403.0,
+      "mean": 12148.642,
+      "std": 51005.681,
+      "min": 0.1,
+      "25%": 86.0,
+      "50%": 600.0,
+      "75%": 4498.5,
+      "max": 8580100.0,
+      "skew": 47.737,
+      "kurtosis": 5486.935,
+      "median": 600.0
+    },
+    {
+      "variable": "Production",
+      "count": 240403.0,
+      "mean": 46565.507,
+      "std": 400847.437,
+      "min": 0.0,
+      "25%": 86.0,
+      "50%": 705.0,
+      "75%": 6730.0,
+      "max": 37158000.0,
+      "skew": 29.059,
+      "kurtosis": 1243.863,
+      "median": 705.0
+    },
+    {
+      "variable": "Yield",
+      "count": 240403.0,
+      "mean": 9.081,
+      "std": 568.836,
+      "min": 0.0,
+      "25%": 0.51,
+      "50%": 1.0,
+      "75%": 2.291,
+      "max": 88000.0,
+      "skew": 129.547,
+      "kurtosis": 17027.035,
+      "median": 1.0
+    }
+  ],
+  "outliers": {
+    "yield_outlier_rows": 7083,
+    "share_pct": 2.95
+  },
+  "year_coverage": {
+    "valid_years": [
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014
+    ],
+    "dropped_years": [
+      2015
+    ]
+  },
+  "trend_total": {
+    "first_year": 1997,
+    "last_year": 2014,
+    "first_mt": 844.89,
+    "last_mt": 596.73,
+    "slope_mt_per_year": 3.339,
+    "p_value": 0.38188844429337016,
+    "r2": 0.048
+  },
+  "top_crops": [
+    {
+      "crop": "Sugarcane",
+      "production_mt": 5535.68,
+      "share_pct": 49.45
+    },
+    {
+      "crop": "Rice",
+      "production_mt": 1605.47,
+      "share_pct": 14.34
+    },
+    {
+      "crop": "Wheat",
+      "production_mt": 1332.83,
+      "share_pct": 11.91
+    },
+    {
+      "crop": "Potato",
+      "production_mt": 424.83,
+      "share_pct": 3.79
+    },
+    {
+      "crop": "Cotton(lint)",
+      "production_mt": 297.0,
+      "share_pct": 2.65
+    },
+    {
+      "crop": "Maize",
+      "production_mt": 273.34,
+      "share_pct": 2.44
+    },
+    {
+      "crop": "Jute",
+      "production_mt": 181.56,
+      "share_pct": 1.62
+    },
+    {
+      "crop": "Banana",
+      "production_mt": 146.13,
+      "share_pct": 1.31
+    },
+    {
+      "crop": "Soyabean",
+      "production_mt": 141.84,
+      "share_pct": 1.27
+    },
+    {
+      "crop": "Bajra",
+      "production_mt": 129.68,
+      "share_pct": 1.16
+    }
+  ],
+  "top3_share_pct": 75.7,
+  "top_states": [
+    {
+      "state": "Uttar Pradesh",
+      "share_pct": 28.89
+    },
+    {
+      "state": "Maharashtra",
+      "share_pct": 11.29
+    },
+    {
+      "state": "Tamil Nadu",
+      "share_pct": 10.17
+    },
+    {
+      "state": "Karnataka",
+      "share_pct": 7.21
+    },
+    {
+      "state": "West Bengal",
+      "share_pct": 6.07
+    },
+    {
+      "state": "Punjab",
+      "share_pct": 5.24
+    },
+    {
+      "state": "Gujarat",
+      "share_pct": 4.68
+    },
+    {
+      "state": "Andhra Pradesh",
+      "share_pct": 4.63
+    },
+    {
+      "state": "Madhya Pradesh",
+      "share_pct": 4.01
+    },
+    {
+      "state": "Haryana",
+      "share_pct": 3.41
+    }
+  ],
+  "top5_state_share_pct": 63.6,
+  "season": {
+    "table": [
+      {
+        "Season": "Whole Year",
+        "count": 54182,
+        "median": 2.657,
+        "mean": 32.12
+      },
+      {
+        "Season": "Summer",
+        "count": 14811,
+        "median": 1.557,
+        "mean": 2.81
+      },
+      {
+        "Season": "Winter",
+        "count": 6050,
+        "median": 1.22,
+        "mean": 6.118
+      },
+      {
+        "Season": "Autumn",
+        "count": 4930,
+        "median": 1.003,
+        "mean": 2.723
+      },
+      {
+        "Season": "Rabi",
+        "count": 66160,
+        "median": 0.91,
+        "mean": 2.032
+      },
+      {
+        "Season": "Kharif",
+        "count": 94270,
+        "median": 0.815,
+        "mean": 2.293
+      }
+    ],
+    "kruskal_H": 19901.43,
+    "kruskal_p": 0.0
+  },
+  "area_production": {
+    "spearman_rho": 0.894,
+    "spearman_p": 0.0,
+    "loglog_slope": 1.085,
+    "loglog_r2": 0.597
+  },
+  "corr_year_yield": 0.085,
+  "yield_trends": [
+    {
+      "crop": "Sugarcane",
+      "slope_per_year": 0.3767,
+      "pct_per_year": 0.7,
+      "p_value": 0.004916152487726628,
+      "years": 18
+    },
+    {
+      "crop": "Rice",
+      "slope_per_year": 0.0328,
+      "pct_per_year": 1.71,
+      "p_value": 5.07782939615515e-05,
+      "years": 18
+    },
+    {
+      "crop": "Wheat",
+      "slope_per_year": 0.0244,
+      "pct_per_year": 1.27,
+      "p_value": 0.021195381157908217,
+      "years": 18
+    },
+    {
+      "crop": "Potato",
+      "slope_per_year": 0.0005,
+      "pct_per_year": 0.0,
+      "p_value": 0.9924368841238738,
+      "years": 18
+    },
+    {
+      "crop": "Cotton(lint)",
+      "slope_per_year": 0.0412,
+      "pct_per_year": 2.9,
+      "p_value": 0.0026215332314994816,
+      "years": 18
+    }
+  ],
+  "stability": [
+    {
+      "crop": "Sugarcane",
+      "cv_pct": 5.9,
+      "mean_yield": 53.63
+    },
+    {
+      "crop": "Jute",
+      "cv_pct": 9.5,
+      "mean_yield": 9.38
+    },
+    {
+      "crop": "Potato",
+      "cv_pct": 10.4,
+      "mean_yield": 11.0
+    },
+    {
+      "crop": "Rice",
+      "cv_pct": 11.3,
+      "mean_yield": 1.92
+    },
+    {
+      "crop": "Wheat",
+      "cv_pct": 12.6,
+      "mean_yield": 1.93
+    },
+    {
+      "crop": "Soyabean",
+      "cv_pct": 13.5,
+      "mean_yield": 1.01
+    },
+    {
+      "crop": "Bajra",
+      "cv_pct": 15.6,
+      "mean_yield": 1.06
+    },
+    {
+      "crop": "Maize",
+      "cv_pct": 16.5,
+      "mean_yield": 1.78
+    },
+    {
+      "crop": "Cotton(lint)",
+      "cv_pct": 23.3,
+      "mean_yield": 1.42
+    },
+    {
+      "crop": "Banana",
+      "cv_pct": 29.7,
+      "mean_yield": 22.67
+    }
+  ],
+  "state_crop_extremes": {
+    "best": {
+      "state": "Tamil Nadu",
+      "crop": "Sugarcane",
+      "yield": 105.39
+    },
+    "worst": {
+      "state": "Tamil Nadu",
+      "crop": "Wheat",
+      "yield": 0.05
+    }
+  }
+}

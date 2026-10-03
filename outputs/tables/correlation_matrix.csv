@@ -1,0 +1,5 @@
+,log Area,log Production,log Yield,Year
+log Area,1.0,0.894,0.058,-0.057
+log Production,0.894,1.0,0.455,-0.017
+log Yield,0.058,0.455,1.0,0.085
+Year,-0.057,-0.017,0.085,1.0
